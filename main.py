@@ -1,6 +1,9 @@
 import requests
+import os
 
-api_key = '3f2aa04b179e8f7deb9acc5c603a9085'
+# In terminal wright 'export OWM_API_KEY=3f2aa04b179e8f7deb9acc5c603a9085; python3 main.py'
+api_key = os.environ.get("OWM_API_KEY")
+# api_key = '3f2aa04b179e8f7deb9acc5c603a9085'
 
 parameters = {'lat': 50.075539,
               'lon': 14.437800,
